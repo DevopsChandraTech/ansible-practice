@@ -5,8 +5,8 @@
     COURSE: DevOps with AWS
   tasks:
   - name: task variables
-    vars: 
-      COURSE: ansible
+    # vars: 
+    #   COURSE: ansible
     ansible.builtin.debug:
       msg: "course is {{ COURSE }}"
 

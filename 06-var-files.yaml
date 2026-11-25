@@ -1,0 +1,10 @@
+- name: var-files
+  hosts: local
+  connection: local
+  vars: 
+    var_files: course.yaml
+  tasks:
+  - name: loading var-files
+    ansible.builtin.debug:
+      msg: "course is {{ COURSE }},duration in : {{ 120 HRS }}, trainer is : {{ TRAINER }}"
+      

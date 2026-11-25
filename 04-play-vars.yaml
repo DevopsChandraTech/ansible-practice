@@ -6,6 +6,6 @@
     DURATION: 10HRS
     TRAINER: SivaAnna
   tasks:
-    - name: play variables
-      ansible.builtin.debug:
-        msg: "course is : {{ COURSE }}, duration in : {{ DURATION }}, trainer is : {{ TRAINER }}"
+  - name: play variables
+    ansible.builtin.debug:
+      msg: "course is : {{ COURSE }}, duration in : {{ DURATION }}, trainer is : {{ TRAINER }}"

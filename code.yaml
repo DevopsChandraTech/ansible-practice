@@ -1,0 +1,41 @@
+- name: "Siva"
+  Dob: "01-01-01"
+  Age: "25"
+  Addresses:
+    - Address:
+      DoorNo: 1-23
+      Street: "Gandi Nagar"
+      City: Hyderabad
+      PIN: 234567
+      type: Current
+    - Address:
+      DoorNo: 1-23
+      Street: "Gandi Nagar"
+      City: Hyderabad
+      PIN: 234567
+      type: Perminant
+  Skills:
+  - java
+  - python
+  - devops
+
+- name: "Chandrasekhar K"
+  Dob: "01-01-01"
+  Age: "25"
+  Addresses:
+    - Address:
+      DoorNo: 1-23
+      Street: "Gandi Nagar"
+      City: Hyderabad
+      PIN: 234567
+      type: Current
+    - Address:
+      DoorNo: 1-23
+      Street: "Gandi Nagar"
+      City: Hyderabad
+      PIN: 234567
+      type: Perminant
+  Skills:
+  - java
+  - python
+  - devops

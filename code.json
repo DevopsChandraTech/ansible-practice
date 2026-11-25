@@ -1,0 +1,22 @@
+{
+    "Name":"Siva",
+    "DoB":"01-01-2026",
+    "Age":"24",
+    "Addresses": [
+        {
+            "Address":"Current",
+            "Door-No":"1-34",
+            "Street":"gandi nagar",
+            "City":"Kukatpally",
+            "Pin":"234567"
+        },
+        {
+            "Address":"Current",
+            "Door-No":"1-34",
+            "Street":"gandi nagar",
+            "City":"Kukatpally",
+            "Pin":"234567"   
+        }
+    ],
+    "Skills":["java","python","devops"]
+}

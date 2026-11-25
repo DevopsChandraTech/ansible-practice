@@ -1,6 +1,6 @@
 - name: "Install Nginx"
   hosts: frontend
-  become: true
+  become: true # this is the sudo access to install application
   tasks:
   - name: install nginx
     ansible.builtin.package:

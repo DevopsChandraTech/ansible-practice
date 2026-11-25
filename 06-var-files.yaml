@@ -1,4 +1,4 @@
-- name: variables from file
+- name: "variables from file"
   hosts: local
   connection: local
   var_files:

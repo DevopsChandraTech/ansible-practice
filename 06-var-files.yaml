@@ -6,5 +6,4 @@
   tasks:
   - name: loading var-files
     ansible.builtin.debug:
-      msg: "course is {{ COURSE }},duration in : {{ 120 HRS }}, trainer is : {{ TRAINER }}"
-      
+      msg: "course is: {{ COURSE }},duration in : {{ DURATION }}, trainer is : {{ TRAINER }}"

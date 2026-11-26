@@ -1,6 +1,7 @@
 - name: installation of apps
   hosts: local
   connection: local
+  become: true
   tasks:
   - name: nginx install
     ansible.builtin.package:

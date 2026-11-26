@@ -1,6 +1,7 @@
 - name: multi loop install and uninstall
   hosts: local
   connection: local
+  become: true
   tasks:
   - name: multi install apps
     ansible.builtin.package:

@@ -1,6 +1,7 @@
 - name: ansible_facts
   hosts: local
   connection: local
+  become: true
   tasks:
   - name: install nginx when os is redhat
     ansible.builtin.dnf: # ansible package module

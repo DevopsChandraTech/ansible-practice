@@ -2,10 +2,19 @@
   hosts: local
   connection: local
   vars:
+    # string
     technologies: Linux,shell-script,ansible,aws
+    # dict or map
     tags:
       Application: payment
       Environment: dev
+    # lists
+    tags:
+    - key: Application
+      value: payment
+    - key: Environment
+      value: dev
+
   tasks:
   # default filter without defining variable
   - name: default filters
@@ -21,6 +30,11 @@
   - name: convert dict into list
     ansible.builtin.debug:
       msg: "{{ tags | dict2items }}"
+
+  # list into dict
+  - name: convert list into dict
+    ansible.builtin.debug:
+      msg: "{{ tags | items2dict }}"
 
 
     

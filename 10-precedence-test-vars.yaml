@@ -5,10 +5,10 @@
   #   NAME: play level
   # vars_files:
   # - course.yaml
-  vars_prompt:
-  - name: NAME
-    prompt: What is your NAME
-    private: false
+  # vars_prompt:
+  # - name: NAME
+  #   prompt: What is your NAME
+  #   private: false
   
   tasks:
   - name: from task level var testing
@@ -22,4 +22,5 @@
 # 3. file level
 # 4. play level
 # 5. inventory level
+# 6. prompt level
 

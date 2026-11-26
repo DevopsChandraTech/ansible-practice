@@ -1,0 +1,9 @@
+- name: functions or filters
+  hosts: local
+  connection: local
+  tasks:
+  - name: default filters
+    ansible.builtin.debug:
+      msg: "{{ name | default('ramesh') }}"
+    
+    

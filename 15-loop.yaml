@@ -1,0 +1,12 @@
+- name: loop
+  hosts: local
+  connection: local
+  tasks:
+  - name: loops
+    ansible.builtin.debug:
+      msg: {{ item }}
+    loop: 
+      chandu
+      anu
+      gnapi
+      hansith

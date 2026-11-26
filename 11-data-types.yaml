@@ -1,0 +1,23 @@
+- name: checking data-types
+  hosts: local
+  connection: local
+  vars:
+    course: DevOps
+    batch: 86
+    is_live: true
+    tools:
+      - linux
+      - shell-script
+      - ansible
+    concepts:
+      cloud: AWS
+      cm: ansible
+  tasks:
+  - name: printing data-types
+    ansible.builtin.debug:
+      msg: "course is : {{ course }},batch is : {{ 86 }}, live_status : {{ is_live }},tools are : {{ tools }},
+            concepts are : {{ concepts }}"
+
+  # list []
+  # map {}
+    

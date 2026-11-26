@@ -1,0 +1,16 @@
+- name: ansible_facts
+  hosts: local
+  connection: local
+  tasks:
+  - name: install nginx when os is redhat
+    ansible.builtin.dnf: # ansible package module
+      name: nginx
+      state: latest
+    when: ansible_os_family == "RedHat" # use ansible while referring the facts
+
+  - name: install nginx when os is debian
+    ansible.builtin.apt: # ansible package module
+      name: nginx
+      state: latest
+    when: ansible_os_family == "Debian" # use ansible while referring the facts
+

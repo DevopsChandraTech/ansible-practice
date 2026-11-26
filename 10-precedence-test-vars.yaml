@@ -6,8 +6,8 @@
   # vars_files:
   # - course.yaml
   vars_prompt:
-  - name: username
-    prompt: What is your username
+  - name: NAME
+    prompt: What is your NAME
     private: false
   
   tasks:

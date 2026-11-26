@@ -9,7 +9,7 @@
       Application: payment
       Environment: dev
     # lists
-    tags:
+    list_tags:
       - key: Application
         value: payment
       - key: Environment
@@ -34,7 +34,7 @@
   # list into dict
   - name: convert list into dict
     ansible.builtin.debug:
-      msg: "{{ tags | items2dict }}"
+      msg: "{{ list_tags | items2dict }}"
 
 
     

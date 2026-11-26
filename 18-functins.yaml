@@ -10,10 +10,10 @@
       Environment: dev
     # lists
     tags:
-    - key: Application
-      value: payment
-    - key: Environment
-      value: dev
+      - key: Application
+        value: payment
+      - key: Environment
+        value: dev
 
   tasks:
   # default filter without defining variable

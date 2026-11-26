@@ -11,7 +11,7 @@
 
   # strings into list    
   - name: convert string to list
-    ansible.builtin.split:
+    ansible.builtin.debug:
       msg: "{{ technologies | split(',') }}"
 
 

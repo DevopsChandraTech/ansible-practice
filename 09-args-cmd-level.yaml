@@ -5,4 +5,5 @@
   - name: arg level
     ansible.builtin.debug:
       msg: "course is {{ COURSE }},duration in : {{ DURATION }}, trainer is : {{ TRAINER }}"
-      
+
+# ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 -e COURSE=Azure -e DURATION=150HRS -e TRAINER=SivaAnna 09-args-cmd-level.yaml

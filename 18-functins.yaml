@@ -4,8 +4,8 @@
   vars:
     technologies: Linux,shell-script,ansible,aws
   tags:
-    Application: payment
-    Environment: dev
+  - Application: payment
+  - Environment: dev
   tasks:
   # default filter without defining variable
   - name: default filters

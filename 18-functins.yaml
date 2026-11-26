@@ -20,7 +20,7 @@
   # dictonaries into list
   - name: convert dict into list
     ansible.builtin.debug:
-      msg: "{{ tags | dict2items }}"
+      msg: "{{ tags | 'dict2items' }}"
 
 
     

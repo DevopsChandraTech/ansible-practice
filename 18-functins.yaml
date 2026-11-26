@@ -3,6 +3,9 @@
   connection: local
   vars:
     technologies: Linux,shell-script,ansible,aws
+  tags:
+    Application: payment
+    Environment: dev
   tasks:
   # default filter without defining variable
   - name: default filters
@@ -13,6 +16,11 @@
   - name: convert string to list
     ansible.builtin.debug:
       msg: "{{ technologies | split(',') }}"
+    
+  # dictonaries into list
+  - name: convert dict into list
+    ansible.builtin.debug:
+      msg: "{{ tags | dict2items }}"
 
 
     

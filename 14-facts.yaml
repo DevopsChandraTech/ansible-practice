@@ -7,6 +7,11 @@
     ansible.builtin.dnf: # ansible package module
       name: nginx
       state: latest
+      
+  - name: start nginx service
+    ansible.builtin.service:
+      name: nginx
+      state: started
     when: ansible_os_family == "RedHat" # use ansible while referring the facts
 
   - name: install nginx when os is debian

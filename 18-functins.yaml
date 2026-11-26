@@ -1,9 +1,18 @@
 - name: functions or filters
   hosts: local
   connection: local
+  vars:
+    technologies: Linux,shell-script,ansible,aws
   tasks:
+  # default filter without defining variable
   - name: default filters
     ansible.builtin.debug:
       msg: "{{ name | default('ramesh') }}"
-    
+
+  # strings into list    
+  - name: convert string to list
+    ansible.builtin.split:
+      msg: "{{ technologies | split(',') }}"
+
+
     

@@ -1,14 +1,14 @@
-- name: "Install Nginx"
+- name: "Install Nginx" # name of play
   hosts: frontend
   become: true # this is the sudo access to install application
   tasks:
-  - name: install nginx
+  - name: install nginx # name of task
     ansible.builtin.package:
-      name: nginx
+      name: nginx # name of installed app 
       state: present
 
-  - name: Start Service
+  - name: Start Service # name of task
     ansible.builtin.service:
-      name: nginx
+      name: nginx # service name
       state: started
       enabled: yes

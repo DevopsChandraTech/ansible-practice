@@ -1,13 +1,13 @@
 - name: promt variables
   hosts: local
   connection: local
-  vars_promt:
+  vars_prompt:
   - name: username
     prompt: What is your username
     private: false
 
   - name: password
-    promt: What is your password
+    prompt: What is your password
     private: true # given true here its hided
   tasks:
   - name: giving through promt

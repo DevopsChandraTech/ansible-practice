@@ -15,7 +15,7 @@
     ansible.builtin.service:
       name: "{{ item }}"
       state: started
-    # loop:
-    # - nginx
-    # - mysql
-    # - zip
+    loop:
+    - nginx
+    - mysql
+    - zip

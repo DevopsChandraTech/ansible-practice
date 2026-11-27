@@ -19,7 +19,7 @@
     email:
       - "CHANDU@GMAIL.com"
     ipaddress:
-      - "192.168.2.3"
+      - "19223342.168.2.3"
 
   tasks:
   # default filter without defining variable
@@ -69,8 +69,8 @@
       msg: "{{ email | lower }}"
 
 # check ipaddress format filter correct or not
-  - name: check ipaddress format
-    ansible.builtin.debug:
+  - name: check ipaddress format # (pip3.9 install netaddr)here we need to install python dependency for getting ip address  
+    ansible.builtin.debug: # netaddr is the dependecy 
       msg: "{{ ipaddress | ansible.utils.ipaddr }}"
 
 

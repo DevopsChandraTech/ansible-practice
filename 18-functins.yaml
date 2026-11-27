@@ -18,6 +18,8 @@
       - "Chandrasekhar k"
     email:
       - "CHANDU@GMAIL.com"
+    ipaddress:
+      - "192.168.2.3"
 
   tasks:
   # default filter without defining variable
@@ -65,6 +67,13 @@
   - name: upppercase into lowercase
     ansible.builtin.debug:
       msg: "{{ email | lower }}"
+
+# check ipaddress format filter correct or not
+  -name: check ipaddress format
+  ansible.builtin.debug:
+    msg: "{{ ipaddress | ansible.utils.ipaddr }}"
+
+
 
 
     

@@ -71,9 +71,17 @@
 # check ipaddress format filter correct or not
   - name: check ipaddress format # (pip3.9 install netaddr)here we need to install python dependency for getting ip address  
     ansible.builtin.debug: # netaddr is the dependecy 
-      msg: "{{ ipaddress | ansible.utils.ipaddr }}"
+      msg: "{{ ipaddress | ansible.utils.ipv4 }}"
+    
+# check root command using grep
+  - name: check root command in grep
+    ansible.builtin.commad: /etc/passwd | grep root
+    register: output_root
 
+  - name: check the output_root
+    ansible.builtin.debug:
+      msg: "output_root"
 
-
+    
 
     

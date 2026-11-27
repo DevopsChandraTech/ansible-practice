@@ -36,5 +36,20 @@
     ansible.builtin.debug:
       msg: "{{ list_tags | items2dict }}"
 
+  # read yaml file and take data into a variable
+  - name: yaml file data take into a variable
+    ansible.builtin.set_fact:
+      student_json: "{{ lookup('file', 'code.yaml') | from_yaml }}"
+  
+  # convert yaml file into json
+  - name: convert yaml into json
+    ansible.builtin.debug:
+      msg: "json: {{ code.yaml | to_json }}" 
+
+  # copy yaml into json
+  - name: copy yaml into json 
+    ansible.builtin.copy:
+      dest: ./student.json  
+
 
     

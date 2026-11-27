@@ -15,9 +15,9 @@
       - key: Environment
         value: dev
     name:
-      - Chandrasekhar k
+      - "Chandrasekhar k"
     email:
-      - CHANDU@GMAIL.com
+      - "CHANDU@GMAIL.com"
 
   tasks:
   # default filter without defining variable
@@ -59,7 +59,7 @@
   # convert lower cast into upppercase
   - name: lowercase into upppercase
     ansible.builtin.debug:
-      msg: "{{ name | uppper }}"
+      msg: "{{ name | upper }}"
 
 # convert uppercase into lowercase
   - name: upppercase into lowercase

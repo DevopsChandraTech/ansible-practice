@@ -83,11 +83,20 @@
     ansible.builtin.debug:
       msg: "{{ output_root }}"
 
-  - name: output redirection
+  - name: output redirection_command
     ansible.builtin.command: cat ls -ltr > /tmp/output.txt
     register: redirect_output
+    ignore_errors: true
 
-  - name: print content
+  - name: print content_output
+    ansible.builtin.debug:
+      msg: "{{ redirect_output }}"
+  
+  - name: redirect_output_shell
+    ansible.builtin.shell: cat ls -ltr > /tmp/output.txt
+    register: redirect_output
+
+  - name: print_output_shell
     ansible.builtin.debug:
       msg: "{{ redirect_output }}"
     

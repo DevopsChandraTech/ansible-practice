@@ -44,7 +44,7 @@
   # convert yaml file into json
   - name: convert yaml into json
     ansible.builtin.debug:
-      msg: "json: {{ code.yaml | to_json }}" 
+      msg: "json: {{ student_json | to_json }}" 
 
   # copy yaml into json
   - name: copy yaml into json 

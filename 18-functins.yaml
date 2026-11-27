@@ -14,6 +14,10 @@
         value: payment
       - key: Environment
         value: dev
+    name:
+      - Chandrasekhar k
+    email:
+      - CHANDU@GMAIL.com
 
   tasks:
   # default filter without defining variable
@@ -51,6 +55,16 @@
     ansible.builtin.copy:
       content: "{{ student_json | to_nice_json }}"
       dest: ./student.json  
+
+  # convert lower cast into upppercase
+  - name: lowercase into upppercase
+    ansible.builtin.debug:
+      msg: "{{ name | uppper }}"
+
+# convert uppercase into lowercase
+  - name: upppercase into lowercase
+    ansible.builtin.debug:
+      msg: "{{ email | lower }}"
 
 
     

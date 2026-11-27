@@ -75,7 +75,7 @@
     
 # check root command using grep
   - name: check root command in grep
-    ansible.builtin.shell: /etc/passwd | grep root
+    ansible.builtin.shell: cat /etc/passwd | grep root
     register: output_root
 
   - name: check the output_root

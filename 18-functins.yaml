@@ -71,7 +71,7 @@
 # check ipaddress format filter correct or not
   - name: check ipaddress format
     ansible.builtin.debug:
-    msg: "{{ ipaddress | ansible.utils.ipaddr }}"
+      msg: "{{ ipaddress | ansible.utils.ipaddr }}"
 
 
 

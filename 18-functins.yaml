@@ -19,7 +19,7 @@
     email:
       - "CHANDU@GMAIL.com"
     ipaddress:
-      - "19223342.168.2.3dadaasf"
+      - "192.168.2.3"
 
   tasks:
   # default filter without defining variable

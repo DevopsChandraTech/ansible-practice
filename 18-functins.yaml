@@ -49,6 +49,7 @@
   # copy yaml into json
   - name: copy yaml into json 
     ansible.builtin.copy:
+      content: "{{ student_json | to_nice_json }}"
       dest: ./student.json  
 
 

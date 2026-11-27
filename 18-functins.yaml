@@ -80,7 +80,7 @@
 
   - name: check the output_root
     ansible.builtin.debug:
-      msg: "output_root"
+      msg: "{{ output_root }}"
 
     
 
